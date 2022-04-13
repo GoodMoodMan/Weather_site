@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="loadingContent">Loading data..</div>
+    <header>
+        <div class="logo">
+            This is my basic weather site
+        </div>
+        <form class="changeLocation" action="#">
+            <label name="cityName" id="cityName" value="Search for city">
+                <input type="text" placeholder="Enter city" class="cityNameInput">
+            </label>
+            <button class="changeCityBtn">Search</button>
+        </form>
+    </header>
+    <section class="siteBody">
+        <p class="cityName"></p>
+        <div class="temperatureBox">
+            <p class="actualTemp"></p>
+            <p class="skyStatus"></p>
+        </div>
+        <div class="siteContent">
+            <div class="Content">
+                <p class="pressure"></p>
+                <p class="humidity"></p>
+                <p class="wind"></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+	By Noam
+    </footer>
+	<script src="scripts/main.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background: rgb(32, 68, 34);
+    display: flex;
+    min-height: 6rem;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem 0 5rem;
+    font-size: 2rem;
+}
+* {
+    box-sizing: border-box;
+}
+.changeLocation input, button{
+
+    height: 2.5rem;
+    margin: 0;
+	
+    border: 0;
+    background: white;
+    font-size: 1rem;
+}
+.changeLocation input {
+    max-width: 20rem;
+}
+.changeLocation input:focus {
+    outline: none;
+}
+.changeLocation button {
+    background: rgb(255, 200, 89);
+    color: white;
+    transition: 0.1s ease-in-out;
+    margin-left: -1rem;
+    width: 5rem;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+.changeLocation button:active {
+    background: rgb(250, 160, 0);
+}
+.siteBody {
+    padding: 11rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.siteBody .cityName{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+.siteBody .actualTemp, .skyStatus {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+.temperatureBox {
+    display: flex;
+}
+.siteBody .siteContent {
+    display: flex;
+    gap: 5rem;
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+    background: rgb(64, 64, 64);
+}
+.loadingContent {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 5rem;  
+}
+.loadingContent.active {
+    display: flex;
+}
+@media only screen and (max-width: 1000px) {
+    header {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+        font-size: 1.5rem;
+    }
+    .siteBody {
+        padding: 4rem 0 0 0;
+    }
+    .siteBody .siteContent {
+        gap: 1rem;
+    }
+  }
